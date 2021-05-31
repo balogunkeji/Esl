@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --header-font: 'Cera Pro';
+    --header-color: #F8FDFC;
+    --body-font: 'Mulish', cursive;
+    --body-color: #E5E5E5;
+    --footer: #000;
+    --button: #20C7AB;
+    --footer-color: #F9F9F9;
+    --font-color:#777;
+}
+
+html,body{
+    font-size: 10px;
+    font-family: var(--body-font);
+    color: var(--font-color);
+}
+
+@font-face {
+    font-family: 'Mulish', cursive;
+    src: url('./Mulish/static');
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./cera');
+}
+
+body{
+    font-size: calc(1vw + 1rem);
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    background-color: #F8FDFC;
+    padding: 30px 100px;
+    height: 100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Cera Pro';
+    color: #000;
+    font-weight: 400;
+}
+
+p,input{
+    font-family: var(--body-font);
+      color: var(--body-color);
+}
+
+button{
+    background: var(--button);
+    color: white;
+    border-radius: 12px;
+    padding: 15px 18px;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    margin: 15px 0;
+}
+
+ul > li,a{
+    font-size: 14px;
+    list-style-type: none;
+    text-decoration: none;
+    color: #121113;
+    letter-spacing: 0.18em;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.header-text-1 > h1,p{
+    padding: 15px 0;
+}
+
+.header-text{
+    position: relative;
+}
+
+.header-text .ell,.circle{
+    position: absolute;
+    width: 100%;
+}
+
+.model{
+    margin: 0 50px;
+    width: 100%;
+    max-width: 100%;
+    height: ;
+}
