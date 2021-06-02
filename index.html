@@ -6,23 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ESPI</title>
     <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="container">
-      <header class="header">
+      <div class="header">
         <nav class="nav">
           <img src="images/logo.svg" alt="logo" />
           <ul class="ul">
             <li class="li"><a href="">ABOUT</a></li>
             <li class="li">
-              <a href="">INITIATIVES</a><img src="images/drop.svg" alt="drop" />
+              <a href="">INITIATIVES</a>
+              <ion-icon name="arrow-dropdown"></ion-icon>
             </li>
             <li class="li">
-              <a href="">INSIGHTS</a><img src="images/drop.svg" alt="drop" />
+              <a href="">INSIGHTS</a>
+              <ion-icon name="arrow-dropdown"></ion-icon>
             </li>
             <li class="li"><a href="">CONTACT</a></li>
           </ul>
+          <div class="mobile">
+            <ion-icon name="menu"></ion-icon>
+          </div>
         </nav>
 
         <div class="header-text">
@@ -36,92 +42,96 @@
             <button>join the community</button>
           </div>
           <!-- I used position absolute on the images -->
-          <div class="header-text-2">
-            <img src="images/Ellipse.svg" alt="ell" class="ell" />
-            <img src="images/circle.svg" alt="circle" class="circle" />
+            <div class="header-text-2">
+              <img src="images/circle.svg" alt="circle" class="circle" />  
             <img src="images/model.png" alt="model" class="model" />
+            </div>
+            
           </div>
         </div>
-      </header>
+      </div>
 
-      <section class="section">
-        <figure>
-          <img src="images/idol.svg" alt="idol" class="idol" />
-          <h4>Arts and Craft</h4>
-          <figcaption>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </figcaption>
-        </figure>
-        <figure>
-          <img src="images/image2.svg" alt="image" class="fas" />
-          <h4>Fashion</h4>
-          <figcaption>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</figcaption>
-        </figure>
-        <figure>
-          <img src="images/image3.svg" alt="gas" class="gas" />
-          <h4>Gastronomy</h4>
-          <figcaption>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</figcaption>
-        </figure>
-        <figure>
-          <img src="images/image4.svg" alt="art" class="art" />
-          <h4>Performing Art</h4>
-          <figcaption>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</figcaption>
-        </figure>
-        <figure>
-          <img src="images/image5.svg" alt="creative" class="creative" />
-          <h4>Creative Education</h4>
-          <figcaption>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</figcaption>
-        </figure>
-        <figure>
-          <img src="images/image6.svg" alt="visual" class="visual" />
-          <h4>Visual Arts</h4>
-          <figcaption>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</figcaption>
-        </figure>
-        <figure>
-          <img src="images/image7.svg" alt="tech" class="tech" />
-          <h4>Technology-Enabled Creative Design</h4>
-          <figcaption>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</figcaption>
-        </figure>
-        <figure>
-          <img src="images/image8.svg" alt="trado" class="trado" />
-          <h4>Trado-Medical Tourism</h4>
-          <figcaption>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</figcaption>
-        </figure>
-      </section>
-
-      <section class="section1">
-        <h2>Insights</h2>
-        <div class="cards">
-          <div>
-            <h4>Edo's Creative 
-              Economy as Soft Power</h4>
-            <p>The creative economy of indigenous peoples, when exported in the form of cultural products and services, also contributes to its soft power. It not only creates market opportunities but also increases attractiveness and global reputation.
-            <span>One of Africa's major culture-driven soft powers is the Great Kingdom of Benin, Edo State, Nigeria, which is endowed with a rich and diverse creative economy.</span></p>
-            <link href="#">Read More</link>
+      <!-- <aside class="aside">
+        <section class="section">
+          <h2>Initiatives</h2>
+          <figure>
+            <img src="images/idol.svg" alt="idol" class="idol" />
+            <h4>Arts and Craft</h4>
+            <figcaption>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+              sint. Velit officia consequat duis enim velit mollit. Exercitation
+              veniam consequat sunt nostrud amet.
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="images/image2.svg" alt="image" class="fas" />
+            <h4>Fashion</h4>
+            <figcaption>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/image3.svg" alt="gas" class="gas" />
+            <h4>Gastronomy</h4>
+            <figcaption>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/image4.svg" alt="art" class="art" />
+            <h4>Performing Art</h4>
+            <figcaption>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/image5.svg" alt="creative" class="creative" />
+            <h4>Creative Education</h4>
+            <figcaption>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/image6.svg" alt="visual" class="visual" />
+            <h4>Visual Arts</h4>
+            <figcaption>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/image7.svg" alt="tech" class="tech" />
+            <h4>Technology-Enabled Creative Design</h4>
+            <figcaption>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/image8.svg" alt="trado" class="trado" />
+            <h4>Trado-Medical Tourism</h4>
+            <figcaption>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</figcaption>
+          </figure>
+        </section>
+  
+        <section class="section1">
+          <h2>Insights</h2>
+          <div class="cards">
+            <div>
+              <h4>Edo's Creative 
+                Economy as Soft Power</h4>
+              <p>The creative economy of indigenous peoples, when exported in the form of cultural products and services, also contributes to its soft power. It not only creates market opportunities but also increases attractiveness and global reputation.
+              <span>One of Africa's major culture-driven soft powers is the Great Kingdom of Benin, Edo State, Nigeria, which is endowed with a rich and diverse creative economy.</span></p>
+              <link href="#">Read More</link>
+            </div>
+            <div>
+              <img src="images/image9.svg" alt="wood">
+            </div>
           </div>
-          <div>
-            <img src="images/image9.svg" alt="wood">
+          <div class="cards">
+            <div>
+              <h4>COVID-19 and The Creative Economy 
+                (Creative Economy is Pivotal 
+                in Shaping Soft Power)</h4>
+              <p>The outbreak of the COVID-19 pandemic has redefined conventional forms of social interactions and slowed down the global economy at large.
+                Central and Non-Central Governments worldwide continue to enforce lockdown and quarantine measures, even as some have begun to ease their social distancing policies gradually.
+                </p>
+              <link href="#">Read More</link>
+            </div>
+            <div>
+              <img src="images/image0.svg" alt="">
+            </div>
           </div>
-        </div>
-        <div class="cards">
-          <div>
-            <h4>COVID-19 and The Creative Economy 
-              (Creative Economy is Pivotal 
-              in Shaping Soft Power)</h4>
-            <p>The outbreak of the COVID-19 pandemic has redefined conventional forms of social interactions and slowed down the global economy at large.
-              Central and Non-Central Governments worldwide continue to enforce lockdown and quarantine measures, even as some have begun to ease their social distancing policies gradually.
-              </p>
-            <link href="#">Read More</link>
-          </div>
-          <div>
-            <img src="images/image0.svg" alt="">
-          </div>
-        </div>
-      </section>
-
-      <footer class="footer">
+        </section>
+      </aside>
+-->
+       <footer class="footer">
         <div class="footer-1">
           <div>
             <img src="images/logo2.svg" alt="logo2">
@@ -158,7 +168,8 @@
         </div>
       </footer>
     </div>
+  </body>
 
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-  </body>
+    <script src="style.js"></script>
 </html>
