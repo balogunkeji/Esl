@@ -30,7 +30,7 @@ body {
 }
 
 @font-face {
- font-family: "Cera Pro";
+  font-family: "Cera Pro";
   src: url("/cera");
 }
 
@@ -40,11 +40,9 @@ body {
   overflow-x: hidden;
 }
 
-
-
 .header {
-    background-color: #f8fdfc;
-    width: 100%;
+  background-color: #f8fdfc;
+  width: 100%;
 }
 
 h1,
@@ -64,20 +62,23 @@ figure h4 {
   font-size: 16px;
 }
 
-p{
-  padding: 5px 0 ;
+p {
+  padding: 5px 0;
 }
 
 p,
 input,
-figcaption,a,li {
+figcaption,
+a,
+li {
   font-family: var(--body-font);
   color: var(--body-color);
   font-weight: 400;
   font-size: 14px;
 }
 
-button {
+button,
+.header-form button {
   background: var(--button);
   color: white;
   border-radius: 12px;
@@ -89,20 +90,20 @@ button {
   margin: 15px 0;
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-.header{
+.header {
   width: 100%;
   height: auto;
 }
 
 /* navbar */
 
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -110,19 +111,20 @@ nav{
   flex-wrap: wrap;
 }
 
-nav img{
+nav img {
   width: 100px;
   max-width: 100%;
   display: block;
 }
 
-.mobile{
+.mobile {
   font-size: 50px;
   position: relative;
   display: none;
 }
 
-li,nav a{
+li,
+nav a {
   display: flex;
   text-decoration: none;
   list-style-type: none;
@@ -131,12 +133,12 @@ li,nav a{
   margin: 0 5.5px;
 }
 
-li ion-icon{
+li ion-icon {
   font-size: 30px;
   color: black;
 }
 
-ul{
+ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -144,36 +146,38 @@ ul{
 }
 
 /* header-text */
-.header-text{
+.header-text {
   display: flex;
   justify-content: space-between;
   align-content: space-between;
 }
 
 /* header-text-2 */
-.circle{
+.circle {
   background-color: black;
   border-radius: 50%;
 }
 
-.circle,.model{
+.circle,
+.model {
   position: absolute;
 }
 
 /* footer */
 
-footer{
+footer {
   background-color: black;
   color: white;
   max-width: 100%;
 }
 
-footer li{
+footer li {
   color: white;
   padding: 5px 0;
 }
 
-input{
+input,
+textarea {
   display: relative;
   max-width: 100%;
   padding: 15px 18px;
@@ -182,36 +186,35 @@ input{
   color: grey;
 }
 
-form button{
+.footer-5 button {
   border-radius: 0;
   position: absolute;
   margin-top: -0.8px;
 }
 
-form{
+form {
   margin: auto;
 }
 
-label{
+label {
   font-size: 20px;
   display: block;
   padding-bottom: 20px;
 }
 
-
-input{
+input {
   width: 70%;
 }
 
-aside h2{
+aside h2 {
   font-size: 3rem;
   padding: 3rem;
   position: relative;
 }
 
-aside h2::after{
+aside h2::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 100px;
   height: 1px;
   left: 150px;
@@ -219,7 +222,7 @@ aside h2::after{
   background-color: black;
 }
 
-.section{
+.section {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 20px;
@@ -227,19 +230,22 @@ aside h2::after{
   place-items: center;
 }
 
-footer{
+footer {
+  max-width: 100%;
+  width: 100vw;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  bottom: 0;
   grid-gap: 10px;
   grid-template-rows: auto;
   padding: 20px;
 }
 
-figure img{
+figure img {
   width: 280px;
 }
 
-figure{
+figure {
   background-color: white;
   width: 280px;
   height: auto;
@@ -247,18 +253,18 @@ figure{
   box-shadow: 0px 14px 54px rgba(0, 0, 0, 0.02);
 }
 
-figure h4{
+figure h4 {
   padding: 20px;
 }
 
-figcaption{
+figcaption {
   padding: 0 5px 25px 15px;
 }
-form{
+form {
   -ms-grid-column-span: 1/5;
 }
 
-.cards{
+.cards {
   background-color: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -269,7 +275,7 @@ form{
   border-radius: 20px;
 }
 
-.cards2{
+.cards2 {
   background-color: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -280,41 +286,85 @@ form{
   border-radius: 20px;
 }
 
-.cards h4,.cards2 h4{
+.cards h4,
+.cards2 h4 {
   font-size: 20px;
   line-height: 1;
   padding-top: 15px;
 }
 
-.cards img[src="images/image0.svg"]{
+.cards img[src="images/image0.svg"] {
   width: 500px;
   margin-left: 150px;
   height: 300px;
 }
 
-.cards link, .cards2 link{
+.cards link,
+.cards2 link {
   color: blue;
   padding-bottom: 15px;
   font-size: 12px;
 }
 
-.cards p,.cards2 p{
+.cards p,
+.cards2 p {
   padding: 20px 0;
   color: black;
   font-size: 13px;
 }
-span{
+span {
   display: block;
   padding-bottom: 10px;
   font-size: 13px;
   color: black;
 }
 
-.cards img[src="images/image9.svg"]{
+.cards img[src="images/image9.svg"] {
   width: 280px;
   border-radius: 18px;
-  background-color:var(--button);
+  background-color: var(--button);
   display: block;
-  padding:  5px 70px;
+  padding: 5px 70px;
   margin: 0 60px;
+}
+
+.header-form {
+  grid-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, (300px, 1fr));
+}
+
+.header-form h2{
+  font-size: 3rem;
+}
+
+.header1 {
+  background-color: #e5e5e5;
+}
+
+.sections p{
+  color: #515151;
+}
+
+.sections a{
+  color: blue;
+}
+
+.sections h2{
+  padding: 20px 0;
+  font-size: 3.5rem;
+}
+
+.sections p{
+  padding-bottom: 20px;
+}
+
+.sections img{
+  display: block;
+  margin: 0 auto;
+}
+
+.sections h3{
+  font-size: 2.5rem;
+  padding: 20px 0;
 }

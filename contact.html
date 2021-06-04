@@ -1,51 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESPI</title>
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
     <div class="header">
-        <nav class="nav">
-          <img src="images/logo.svg" alt="logo" />
-          <ul class="ul">
-            <li class="li"><a href="index.html">ABOUT</a></li>
-            <li class="li">
-              <a href="initiatives">INITIATIVES</a>
-              <ion-icon name="arrow-dropdown"></ion-icon>
-            </li>
-            <li class="li">
-              <a href="insight.html">INSIGHTS</a>
-              <ion-icon name="arrow-dropdown"></ion-icon>
-            </li>
-            <li class="li"><a href="contact.html">CONTACT</a></li>
-          </ul>
-          <div class="mobile">
-            <ion-icon name="menu"></ion-icon>
-          </div>
-        </nav>
-
-        <div class="header-text">
-          <div class="header-text-1">
-            <h1>Creative & cultural potential of the Edo People</h1>
-            <p style="color: black">
-              A movement focused on how Edo and the Edo Diaspora can optimize
-              their creative and knowledge industries to effectively harness
-              their soft power to engender inclusive growth.
-            </p>
-            <button>join the community</button>
-          </div>
-          <!-- I used position absolute on the images -->
-            <div class="header-text-2">
-              <img src="images/circle.svg" alt="circle" class="circle" />  
-            <img src="images/model.png" alt="model" class="model" />
-            </div>
-          </div>
+      <nav class="nav">
+        <a href="index.html"><img src="images/logo.svg" alt="logo" /></a>
+        <ul class="ul">
+          <li class="li"><a href="index.html">ABOUT</a></li>
+          <li class="li">
+            <a href="/initiatives.html">INITIATIVES</a>
+            <ion-icon name="arrow-dropdown"></ion-icon>
+          </li>
+          <li class="li">
+            <a href="/insight.html">INSIGHTS</a>
+            <ion-icon name="arrow-dropdown"></ion-icon>
+          </li>
+          <li class="li"><a href="/contact.html">CONTACT</a></li>
+        </ul>
+        <div class="mobile">
+          <ion-icon name="menu"></ion-icon>
         </div>
+      </nav>
+      <form action="" class="header-form">
+        <h2>Send us an email</h2>
+        <input type="text" placeholder="Name" />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email address"
+        />
+        <textarea
+          name="message"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Message"
+        ></textarea>
+        <button type="submit">SEND MESSAGE</button>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-1">
+        <div>
+          <img src="images/logo2.svg" alt="logo2" />
+        </div>
+        <div>
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-twitter"></ion-icon>
+          <ion-icon name="logo-linkedin"></ion-icon>
+          <ion-icon name="logo-instagram"></ion-icon>
+        </div>
+      </div>
+      <div class="footer-2">
+        <li>About</li>
+        <li>Insights</li>
+        <li>Contact</li>
+      </div>
+      <div class="footer3-">
+        <li>Arts and Crafts</li>
+        <li>Fashion</li>
+        <li>Gastronomy</li>
+        <li>Performing Arts</li>
+      </div>
+      <div class="footer-4">
+        <li>Creative Education</li>
+        <li>Visual Arts</li>
+        <li>Technology-Enabled Creative Design</li>
+      </div>
+      <div class="footer-5">
+        <form action="">
+          <label for="email">Join Our Email List</label>
+          <input type="email" placeholder="enter your email address" />
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+      </div>
+    </footer>
 
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="style.js"></script>
-</body>
+  </body>
 </html>
