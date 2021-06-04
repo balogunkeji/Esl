@@ -391,13 +391,13 @@ img[src="images/edo.svg"]{
   padding: 20px 0;
 }
 
-.header1{
+.about{
   background-color: var(--footer);
   color: white;
   position: relative;
 }
 
-.header1::after{
+.about::after{
   content: url('/images/mask.svg');
   bottom: 0;
   position: absolute;
@@ -407,11 +407,11 @@ img[src="images/edo.svg"]{
   max-width: 100%;
 }
 
-.header1 h1,.header a, .header1 ion-icon{
+.about h1,.about a, .about ion-icon{
   color: white;
 }
 
-.header1 h1{
+.about h1{
   font-size: 40px;
   font-family: 'Mulish';
 }

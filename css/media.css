@@ -326,7 +326,7 @@
     width: 80%;
   }
 
-  .sections,.asidess{
+  .sections,.aside-about{
     margin: 55px 30px
   }
 
@@ -407,7 +407,7 @@
     width: 80%;
   }
 
-  .sections, .asidess{
+  .sections, .aside{
     margin: 55px 100px
   }
 
@@ -551,28 +551,26 @@
   }
 
   .header {
-    padding: 2rem 3rem;
+    padding:  3rem;
   }
 
   .header-text {
-    padding: 70px 50px 80px 50px;
+    /* padding: 70px 20px 80px 50px; */
     display: grid;
     grid-template-columns: 1.5fr 2fr;
   }
 
-  .header-text-1 {
-    padding-left: 100px;
-  }
-
+  
   .header-text-1 h1 {
-    font-size: 54px;
+    font-size: 48px;
     line-height: 1;
     padding-top: 50px;
+    margin: 0;
   }
 
   .header-text-1 p {
-    padding: 25px 0;
-    font-size: 18px;
+    padding: 10px 30px;
+    font-size: 16px;
   }
 
   .header-text-2 {
