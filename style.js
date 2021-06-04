@@ -8,6 +8,8 @@ function myButton(){
   }else{
     ul.style.display = 'block'
   }
+
+  preventDefault();
 }
 
 // let toggleMenu = document.querySelector('.mobile');
