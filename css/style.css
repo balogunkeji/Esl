@@ -40,7 +40,7 @@ body {
   overflow-x: hidden;
 }
 
-.header {
+.header,.aside-about {
   background-color: #f8fdfc;
   width: 100%;
 }
@@ -72,7 +72,7 @@ figcaption,
 a,
 li {
   font-family: var(--body-font);
-  color: var(--body-color);
+  color: #515151;
   font-weight: 400;
   font-size: 14px;
 }
@@ -390,3 +390,143 @@ img[src="images/edo.svg"]{
   font-size: 2.5rem;
   padding: 20px 0;
 }
+
+.header1{
+  background-color: var(--footer);
+  color: white;
+  position: relative;
+}
+
+.header1::after{
+  content: url('/images/mask.svg');
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.header1 h1,.header a, .header1 ion-icon{
+  color: white;
+}
+
+.header1 h1{
+  font-size: 40px;
+  font-family: 'Mulish';
+}
+
+.text1{
+  text-align: center;
+}
+
+.text1 h2, .text2 h3{
+  font-size: 3rem;
+}
+
+.text1,.text2{
+  padding: 40px 0;
+}
+
+.text2{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+  place-items: center;
+}
+
+.sections .cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  width: 600px;
+  height: 400px;
+  margin: 50px 0;
+  border-radius: 20px;
+}
+
+.edos img{
+  width: 350px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.sections .cards .text{
+  padding: 10px;
+}
+
+.sections .cards .text{
+  font-size: 14px;
+}
+@media only screen and (max-width: 600px) {
+  .cards{
+    display: block;
+    width: 300px;
+  height: 700px;
+  
+  }
+}
+
+.sections1 p, .aside p{
+  color: #515151;
+}
+.aside-about{
+  padding-bottom: 50px;
+}
+ .asides {
+  display: flex;
+  justify-content: space-between;
+  width: 650px;
+  max-width: 100%;
+  height: 150px;
+  align-items: center;
+  border-radius: 40px;
+  margin: 50px 0;
+  border: 2px solid #515151;
+}
+
+/* .aside-about h2{
+  padding-left: 5px;
+} */
+
+.num-text{
+  padding: 10px;
+}
+.num{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  max-width :100px;
+  max-height: 100px;
+  text-align: center;
+  font-size: 5rem;
+  margin: 20px;
+}
+
+.num p{
+   color: #fff;
+}
+
+.asidess{
+  display: grid;
+  grid-auto-columns: auto;
+  place-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .asides{
+    display: block;
+    width: 300px;
+  height: 270px;
+  padding: 20px;
+  margin: 20px auto;
+  }
+
+  .num{
+    display: block;
+    margin: 0 auto;
+  }
+}
+/* section */
