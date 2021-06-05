@@ -22,6 +22,7 @@ body {
   font-size: 10px;
   font-family: var(--body-font);
   color: var(--font-color);
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -34,15 +35,19 @@ body {
   src: url("/cera");
 }
 
-body {
+.container {
   line-height: 1.5;
   background-color: var(--body-color);
-  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+  min-height: 100%;
+  position: relative;
 }
 
-.header,.aside-about {
+.header{
   background-color: #f8fdfc;
-  width: 100%;
+  max-width: 100%;
+   /* max-height: 100%; */
 }
 
 h1,
@@ -58,14 +63,6 @@ h6 {
   font-weight: bold;
 }
 
-figure h4 {
-  font-size: 16px;
-}
-
-p {
-  padding: 5px 0;
-}
-
 p,
 input,
 figcaption,
@@ -74,11 +71,10 @@ li {
   font-family: var(--body-font);
   color: #515151;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
-button,
-.header-form button {
+button {
   background: var(--button);
   color: white;
   border-radius: 12px;
@@ -87,7 +83,6 @@ button,
   text-transform: uppercase;
   outline: none;
   border: none;
-  margin: 15px 0;
 }
 
 img {
@@ -95,13 +90,6 @@ img {
   height: auto;
   display: block;
 }
-
-.header {
-  width: 100%;
-  height: auto;
-}
-
-/* navbar */
 
 nav {
   display: flex;
@@ -123,33 +111,40 @@ nav img {
   display: none;
 }
 
-li,
-nav a {
+ .header nav a,.header nav li {
   display: flex;
   text-decoration: none;
   list-style-type: none;
   align-items: center;
-  color: black;
   margin: 0 5.5px;
 }
 
-li ion-icon {
-  font-size: 30px;
-  color: black;
+.ul li ion-icon {
+  font-size: 2rem;
 }
 
-ul {
+ ul {
   display: flex;
   justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   overflow-x: hidden;
 }
 
 /* header-text */
+h1{
+  font-size: 5rem;
+  line-height: 1;
+}
 .header-text {
   display: flex;
   justify-content: space-between;
   align-content: space-between;
+}
+
+.header-text-1 p{
+ padding: 30px 0;
 }
 
 /* header-text-2 */
@@ -163,48 +158,6 @@ ul {
   position: absolute;
 }
 
-/* footer */
-
-footer {
-  background-color: black;
-  color: white;
-  max-width: 100%;
-}
-
-footer li {
-  color: white;
-  padding: 5px 0;
-}
-
-input,
-textarea {
-  display: relative;
-  max-width: 100%;
-  padding: 15px 18px;
-  outline: none;
-  border: none;
-  color: grey;
-}
-
-.footer-5 button {
-  border-radius: 0;
-  position: absolute;
-  margin-top: -0.8px;
-}
-
-form {
-  margin: auto;
-}
-
-label {
-  font-size: 20px;
-  display: block;
-  padding-bottom: 20px;
-}
-
-input {
-  width: 70%;
-}
 
 aside h2 {
   font-size: 3rem;
@@ -239,38 +192,39 @@ aside h2::after {
   margin-bottom: 50px;
 }
 
-footer {
-  max-width: 100%;
-  width: 100vw;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  bottom: 0;
-  grid-gap: 10px;
-  grid-template-rows: auto;
-  padding: 20px;
-}
-
 figure img {
-  width: 280px;
+  width: 279px;
+  border-radius: 20px;
+  display: block;
+  margin: 2px auto 0 auto;
 }
 
 figure {
   background-color: white;
-  width: 280px;
-  height: auto;
+  width: 290px;
+  max-height: 100%;
   border-radius: 20px;
   box-shadow: 0px 14px 54px rgba(0, 0, 0, 0.02);
+
 }
 
 figure h4 {
   padding: 20px;
+  font-size: 2rem;
+  font-family: 'Mulish';
 }
 
 figcaption {
   padding: 0 5px 25px 15px;
 }
-form {
-  -ms-grid-column-span: 1/5;
+
+.section1{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  place-items: center;
+  grid-gap: 10px;
+  margin-bottom: 50px;
 }
 
 .cards {
@@ -279,27 +233,15 @@ form {
   align-items: center;
   background-color: white;
   width: 650px;
-  height: 300px;
+  height: fit-content;
   margin: 20px 0;
   border-radius: 20px;
 }
 
-.cards .text{
+.cards{
   padding: 15px;
 }
-@media only screen and (max-width: 600px) {
-  .cards{
-    display: block;
-    width: 300px;
-  height: 550px;
-  
-  }
 
-.text{
-  display: block;
-  width: 0;
-}
-}
 .text{
   display: block;
   width: 90%;
@@ -330,203 +272,70 @@ form {
   color: black;
 }
 
-.header-form {
-  grid-gap: 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, (300px, 1fr));
-}
 
-.header-form h2{
-  font-size: 3rem;
-}
-
-.header1 {
-  background-color: #e5e5e5;
-}
-
-.sections p{
-  color: #515151;
-}
-
-.sections a{
-  color: blue;
-}
-
-.sections h2{
-  padding: 20px 0;
-  font-size: 3rem;
-}
-
-.sections p{
-  padding-bottom: 20px;
-  font-size: 16px;
-}
-
-.sections img{
-  width: 100%;
-  max-width: 100%;
-}
-
-img[src="images/edo.svg"]{
-  width: 90%;
-}
-
-.sections-img img{
-  width: 300px;
-}
-
-.sections-img img[src="images/image4.svg"]{
-  margin-left: 90px;
-}
-.sections-img{
-  margin: 30px 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
-  grid-gap: 20px
-
-}
-
-.sections h3{
-  font-size: 2.5rem;
-  padding: 20px 0;
-}
-
-.about{
-  background-color: var(--footer);
-  color: white;
-  position: relative;
-}
-
-.about::after{
-  content: url('/images/mask.svg');
-  bottom: 0;
-  position: absolute;
-  left: 0;
-  right: 0;
-  width: 100%;
-  max-width: 100%;
-}
-
-.about h1,.about a, .about ion-icon{
-  color: white;
-}
-
-.about h1{
-  font-size: 40px;
-  font-family: 'Mulish';
-}
-
-.text1{
-  text-align: center;
-}
-
-.text1 h2, .text2 h3{
-  font-size: 3rem;
-}
-
-.text1,.text2{
-  padding: 40px 0;
-}
-
-.text2{
-  display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
-  place-items: center;
-}
-
-.sections .cards {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: white;
-  width: 600px;
-  height: 400px;
-  margin: 50px 0;
-  border-radius: 20px;
-}
-
-.edos img{
-  width: 350px;
-  max-width: 100%;
-  display: block;
-  margin: 0 auto;
-  border-radius: 20px;
-}
-
-.sections .cards .text{
-  padding: 10px;
-}
-
-.sections .cards .text{
-  font-size: 14px;
-}
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 680px) {
   .cards{
     display: block;
     width: 300px;
-  height: 700px;
-  
+  height: fit-content;
   }
+
 }
 
-.sections1 p, .aside p{
-  color: #515151;
-}
-.aside-about{
-  padding-bottom: 50px;
-}
- .asides {
-  display: flex;
-  justify-content: space-between;
-  width: 650px;
+footer {
+  background-color: black;
+  color: white;
   max-width: 100%;
-  height: 150px;
-  align-items: center;
-  border-radius: 40px;
-  margin: 50px 0;
-  border: 2px solid #515151;
-}
-
-/* .aside-about h2{
-  padding-left: 5px;
-} */
-
-.num-text{
-  padding: 10px;
-}
-.num{
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  max-width :100px;
-  max-height: 100px;
-  text-align: center;
-  font-size: 5rem;
-  margin: 20px;
-}
-
-.num p{
-   color: #fff;
-}
-
-.asidess{
+  width: 100%;
   display: grid;
-  grid-auto-columns: auto;
-  place-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  bottom: 0;
+  grid-template-rows: auto;
+  padding: 30px;
 }
 
-@media only screen and (max-width: 600px) {
-  .asides{
-    display: block;
-    width: 300px;
-  height: 270px;
-  padding: 20px;
-  margin: 20px auto;
-  }
-
-  .num{
-    display: block;
-    margin: 0 auto;
-  }
+footer li {
+  color: white;
+  padding: 5px 0;
+  list-style-type: none;
+  font-size: 12px;
 }
-/* section */
+
+input{
+  display: relative;
+  max-width: 100%;
+  padding: 15px 18px;
+  outline: none;
+  border: none;
+  color: grey;
+}
+
+.footer-5 button {
+  border-radius: 0;
+  position: absolute;
+  margin-right: -30px;
+  padding: 15px 18px;
+}
+
+form {
+  margin: auto;
+}
+
+label {
+  font-size: 20px;
+  display: block;
+  padding-bottom: 20px;
+}
+
+.footer-5 input {
+  width: 50%;
+}
+.footer-5{
+  padding-left: 20px;
+}
+.footers{
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+
