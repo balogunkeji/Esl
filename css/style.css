@@ -169,7 +169,7 @@ aside h2::after {
   position: absolute;
   content: "";
   width: 100px;
-  height: 1px;
+  height: 2px;
   left: 150px;
   top: 52px;
   background-color: black;
