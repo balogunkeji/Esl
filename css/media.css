@@ -324,15 +324,19 @@
   }
 
   .header-text-1{
-    padding: 4.5rem 4rem;
+    padding: 4.5rem 4rem 4.5rem 8rem;
   }
   .header-text-1 h1{
     padding-top: 80px;
     width: 80%;
   }
 
+  .header-text p{
+    width: 80%;
+  }
+
   .header-text-1 button{
-    margin-bottom: 9.8rem;
+    margin-bottom: 10rem;
     margin-top: 1rem;
   }
   .model {
