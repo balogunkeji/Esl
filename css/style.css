@@ -89,6 +89,7 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
 }
 
 nav {
@@ -229,22 +230,33 @@ figcaption {
 
 .cards {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   background-color: white;
-  width: 650px;
-  height: fit-content;
+  width: 700px;
+  height: 300px;
   margin: 20px 0;
   border-radius: 20px;
+  padding: 15px 0 15px 15px;
 }
 
-.cards{
-  padding: 15px;
+.edo img{
+  object-fit: cover;
+  width: 415px;
+  height: 355px;
+  display: block;
+  margin: 15px auto auto auto;
+   border-radius: 50px;
 }
+.card{
+  height: 280px;
+}
+
 
 .text{
+  width: 70%;
   display: block;
-  width: 90%;
+  padding: 0 50px 0 10px;
 }
 .text h4 {
   font-size: 20px;
@@ -277,8 +289,18 @@ figcaption {
   .cards{
     display: block;
     width: 300px;
-  height: fit-content;
+    height: 680px;
+    padding: 15px 15px 0 15px;
   }
+
+  .card{
+    height: 650px;
+  }
+
+  .text{
+    width: fit-content;
+  }
+
 
 }
 
