@@ -1,0 +1,249 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --header-font: "Cera Pro";
+  --header-color: #f8fdfc;
+  --body-font: "Mulish";
+  --body-color: #e5e5e5;
+  --footer: #000;
+  --button: #20c7ab;
+  --footer-color: #f9f9f9;
+  --font-color: #777777;
+}
+
+html,
+body {
+  font-size: 10px;
+  font-family: var(--body-font);
+  color: var(--font-color);
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: url("/Mulish/static");
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("/cera");
+}
+
+.container-header {
+  line-height: 1.5;
+  background-color: #F8FDFC;
+  max-width: 100%;
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+}
+
+.contact-nav{
+  max-width: 100%;
+   /* max-height: 100%; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cera Pro";
+  color: #000;
+  letter-spacing: -0.05em;
+  font-style: normal;
+  font-weight: bold;
+}
+
+p,
+input,
+figcaption,
+a,
+li {
+  font-family: var(--body-font);
+  color: #515151;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+button {
+  background: var(--button);
+  color: white;
+  border-radius: 12px;
+  padding: 15px;
+  min-width: 100px;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.contact-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-nav img {
+  width: 100px;
+  max-width: 100%;
+  display: block;
+}
+
+.mobile {
+  font-size: 50px;
+  position: relative;
+  display: none;
+}
+
+ .contact-nav a,.contact-nav li {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  align-items: center;
+  margin: 0 5.5px;
+}
+
+.contact-ul li ion-icon {
+  font-size: 2rem;
+}
+
+ .contact-ul {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    max-width: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    bottom: 0;
+    grid-template-rows: auto;
+    padding: 30px;
+  }
+  
+  footer li {
+    color: white;
+    padding: 5px 0;
+    list-style-type: none;
+    font-size: 12px;
+  }
+  
+  input{
+    display: relative;
+    max-width: 100%;
+    padding: 15px 18px;
+    outline: none;
+    border: none;
+    color: grey;
+  }
+
+  .header-form {
+    
+    grid-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, (300px, 1fr));
+  }
+  
+.header-form h2{
+    font-size: 3rem;
+  }
+  
+  .footer-5 button {
+    border-radius: 0;
+    position: absolute;
+    margin-right: -30px;
+    padding: 15px 18px;
+  }
+  
+  form {
+    margin: auto;
+  }
+  
+  label {
+    font-size: 20px;
+    display: block;
+    padding-bottom: 20px;
+  }
+  
+  .footer-5 input {
+    width: 50%;
+  }
+  .footer-5{
+    padding-left: 20px;
+  }
+  .footers{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+  }
+  
+  .header-form input,textarea{
+      min-height: 100%;
+      max-width: 100%;
+      border: 0;
+      outline: none;
+      background-color: #F2F2F2;
+  }
+
+  @media screen and (max-width: 600px) {
+    .contact-header {
+        padding: 1rem;
+        height: auto;
+      }
+      .mobile {
+        display: block;
+      }
+     .contact-ul{
+        position: absolute;
+        display: none;
+        left: -600px;
+        right: 0;
+        top: -1%;
+        overflow: hidden;
+        animation: 0.5s slide forwards;
+      }
+    
+       .contact-ul li, .contact-nav nav .ul a {
+        padding: 25px;
+        color: white;
+      }
+      .contact-nav {
+        justify-content: space-between;
+      }
+     .contact-ul li ion-icon,
+      a {
+        color: white;
+      }
+    
+      @keyframes slide {
+        100% {
+          left: 0;
+          background-color: rgba(0, 0, 0, 0.4);
+          width: 50%;
+          /* min-height: 0; */
+        }
+      }
+     
+  }

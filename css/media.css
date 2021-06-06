@@ -73,7 +73,37 @@
     font-size: 12px;
   }
 
+  /* contact */
+  .header-form {
+    margin: 20px 30px;
+  }
 
+  .header-form button {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .header-form input,
+  textarea {
+    width: 90%;
+  }
+
+  footer{
+    padding: 0 0 60px;
+  }
+
+  .footer-5{
+    padding-left: 15px;
+  }
+  .footer-5 input {
+    width: 50%;
+  }
+
+  .footer-5 button {
+    display: block;
+    margin-top: 10px;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 600px){
@@ -149,6 +179,22 @@
   .section-container1 {
     padding: 0 10px;
   }
+
+  .header-form {
+    margin: 20px 20px 20px 35px;
+  }
+
+  .header-form button {
+    width: 35%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .header-form input,
+  textarea {
+    width: 90%;
+  }
+
 }
 
 @media screen and (min-width: 601px) and (max-width: 768px){
@@ -205,6 +251,21 @@
     padding: 0 50px;
   }
 
+  .header-form {
+    margin: 30px 100px;
+  }
+
+  .header-form button {
+    width: 35%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .header-form input,
+  textarea {
+    width: 90%;
+  }
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px){
@@ -245,6 +306,19 @@
     padding: 0 55px;
   }
 
+  .header-form {
+    margin: 50px 130px;
+  }
+
+  .header-form button {
+    width: 35%;
+    display: block;
+  }
+
+  .header-form input,
+  textarea {
+    width: 80%;
+  }
 
 }
 
@@ -306,6 +380,20 @@
     
   }
 
+  .header-form {
+    margin: 80px 200px 80px 220px;
+  }
+
+  .header-form button {
+    width: 35%;
+    display: block;
+  }
+
+  .header-form input,
+  textarea {
+    width: 80%;
+  }
+
 }
 
 @media screen and (min-width: 1200px){
@@ -345,7 +433,7 @@
     margin-left: 15px;
   }
   .circle {
-    width: 600px;
+    width: 605px;
     margin-top: -20px;
   }
 
@@ -370,6 +458,20 @@
   .section-container1 {
     padding: 0 120px;
    
+  }
+
+  .header-form {
+    margin: 80px 300px;
+  }
+
+  .header-form button {
+    width: 35%;
+    display: block;
+  }
+
+  .header-form input,
+  textarea {
+    width: 80%;
   }
 
 }

@@ -3,22 +3,6 @@
 
   /* .section */
 
- 
-  .header-form {
-    margin: 20px 30px;
-  }
-
-  .header-form button {
-    width: 45%;
-    display: block;
-    margin: 0 auto;
-  }
-
-  .header-form input,
-  textarea {
-    width: 90%;
-  }
-
   .sections{
     margin: 50px 10px;
   }
@@ -43,22 +27,6 @@
 
 @media screen and (min-width: 481px) and (max-width: 600px) {
   
- 
-
-  .header-form {
-    margin: 20px;
-  }
-
-  .header-form button {
-    width: 35%;
-    display: block;
-    margin: 0 auto;
-  }
-
-  .header-form input,
-  textarea {
-    width: 90%;
-  }
 
   .sections{
     margin: 55px 25px
@@ -134,20 +102,6 @@
     margin-left: 50px;
   }
 
-  .header-form {
-    margin: 30px 100px;
-  }
-
-  .header-form button {
-    width: 25%;
-    display: block;
-    margin: 0 auto;
-  }
-
-  .header-form input,
-  textarea {
-    width: 80%;
-  }
 
   .sections,.aside-about{
     margin: 55px 30px
@@ -205,22 +159,6 @@
   .circle {
     width: 420px;
     margin-top: -20px;
-  }
-
-  
-
-  .header-form {
-    margin: 50px 130px;
-  }
-
-  .header-form button {
-    width: 35%;
-    display: block;
-  }
-
-  .header-form input,
-  textarea {
-    width: 80%;
   }
 
   .sections, .aside{
@@ -302,20 +240,6 @@
   aside h2:after {
     left: 220px;
     top: 55px;
-  }
-
-  .header-form {
-    margin: 80px 200px;
-  }
-
-  .header-form button {
-    width: 35%;
-    display: block;
-  }
-
-  .header-form input,
-  textarea {
-    width: 80%;
   }
 
   .sections, .asidess{
@@ -416,20 +340,6 @@
   aside h2:after {
     left: 315px;
     top: 54px;
-  }
-
-  .header-form {
-    margin: 80px 300px;
-  }
-
-  .header-form button {
-    width: 35%;
-    display: block;
-  }
-
-  .header-form input,
-  textarea {
-    width: 80%;
   }
   .sections,.asidess{
     margin: 55px 300px 60px 300px;
