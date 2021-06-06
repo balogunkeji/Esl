@@ -1,5 +1,5 @@
 @media screen and (min-width: 50px) and (max-width: 480px){
-  .header {
+  .header,.contact-header, .insight-header {
     padding: 1rem;
     height: auto;
   }
@@ -104,10 +104,30 @@
     display: block;
     margin-top: 10px;
   }
+
+  .insight-section{
+    margin: 45px 30px;
+  }
+
+  .insight-section h2{
+    font-size: 2.5rem;
+  }
+
+  .insight-section h2,.insight-section h3,.insight-section p, .insight-section span{
+    padding-left: 25px;
+    padding-right: 15px;
+  } 
+
+  img[src="images/edo.svg"]{
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 600px){
-  .header {
+  .header,.contact-header, .insight-header {
     padding: 1rem;
     height: auto;
   }
@@ -195,10 +215,19 @@
     width: 90%;
   }
 
+  .insight-section{
+    margin: 45px 20px;
+  }
+
+  .insight-section h2,.insight-section h3,.insight-section p, .insight-section span{
+    padding-left: 50px;
+    padding-right: 50px;
+  } 
+
 }
 
 @media screen and (min-width: 601px) and (max-width: 768px){
-  .header {
+  .header,.contact-header, .insight-header {
     padding: 2rem 1rem;
   }
 
@@ -266,10 +295,19 @@
     width: 90%;
   }
 
+  .insight-section{
+    margin: 55px 30px 100px 30px;
+  }
+
+  .insight-section h2,.insight-section h3,.insight-section p, .insight-section span{
+    padding-left: 61px;
+    padding-right: 61px;
+  } 
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px){
-  .header {
+  .header,.contact-header, .insight-header {
     padding: 2rem;
   }
 
@@ -320,10 +358,19 @@
     width: 80%;
   }
 
+  .insight-section{
+    margin: 55px 100px 100px 100px;
+  }
+
+  .insight-section h2,.insight-section h3,.insight-section p, .insight-section span{
+    padding-left: 61px;
+    padding-right: 61px;
+  } 
+
 }
 
 @media screen and (min-width: 993px) and (max-width: 1199px){
-  .header {
+  .header,.contact-header, .insight-header {
     padding: 2rem 3rem;
   }
 
@@ -394,10 +441,28 @@
     width: 80%;
   }
 
+  aside h2 {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  aside h2:after {
+    left: 220px;
+    top: 55px;
+  }
+
+  .insight-section{
+    margin: 5px 200px 100px 200px;
+  }
+
+  .insight-section h2,.insight-section h3,.insight-section p, .insight-section span{
+    padding-left: 61px;
+    padding-right: 61px;
+  } 
+
 }
 
 @media screen and (min-width: 1200px){
-  .header {
+  .header,.contact-header, .insight-header {
     padding: 2rem 6rem;
   }
 
@@ -475,4 +540,19 @@
     width: 80%;
   }
 
+  aside h2 {
+    padding-left: 200px;
+  }
+  aside h2:after {
+    left: 315px;
+    top: 54px;
+  }
+  .insight-section{
+    margin: 55px 300px 100px 300px;
+  }
+
+  .insight-section h2,.insight-section h3,.insight-section p, .insight-section span{
+    padding-left: 61px;
+    padding-right: 61px;
+  } 
 }

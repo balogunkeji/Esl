@@ -1,34 +1,5 @@
 
 
-
-
-.header1 {
-  background-color: #e5e5e5;
-}
-
-.sections p{
-  color: #515151;
-}
-
-.sections a{
-  color: blue;
-}
-
-.sections h2{
-  padding: 20px 0;
-  font-size: 3rem;
-}
-
-.sections p{
-  padding-bottom: 20px;
-  font-size: 16px;
-}
-
-.sections img{
-  width: 100%;
-  max-width: 100%;
-}
-
 img[src="images/edo.svg"]{
   width: 90%;
 }

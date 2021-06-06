@@ -35,16 +35,16 @@ body {
   src: url("/cera");
 }
 
-.contact-header {
+.container-header {
   line-height: 1.5;
-  background-color: #F8FDFC;
+  background-color: var(--body-color);
   max-width: 100%;
   width: 100%;
   min-height: 100%;
   position: relative;
 }
 
-.contact-nav{
+.insight-nav{
   max-width: 100%;
    /* max-height: 100%; */
 }
@@ -97,6 +97,7 @@ nav {
   align-content: space-between;
   flex-wrap: wrap;
 }
+
 .mobile {
   font-size: 50px;
   position: relative;
@@ -115,7 +116,7 @@ nav {
   font-size: 2rem;
 }
 
- ul {
+  ul {
   display: flex;
   justify-content: space-between;
   align-content: space-between;
@@ -152,15 +153,12 @@ footer {
     color: grey;
   }
 
-  .header-form {
-    
-    grid-gap: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, (300px, 1fr));
-  }
-  
-.header-form h2{
-    font-size: 3rem;
+  .insight-section{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      place-content: center;
+     
   }
   
   .footer-5 button {
@@ -191,13 +189,45 @@ footer {
     justify-content: space-evenly;
     align-content: space-evenly;
   }
+  .insight-section a{
+    color: blue;
+  }
   
-  .header-form input,textarea{
-      min-height: 100%;
-      max-width: 100%;
-      border: 0;
-      outline: none;
-      background-color: #F2F2F2;
+  .insight-section h2{
+    padding: 25px 0;
+    font-size: 4rem;
+  }
+  
+  .insight-section p{
+    padding-bottom: 20px;
+    font-size: 16px;
+    color: #515151;
   }
 
-  
+  .insight-section h3{
+      padding: 25px 0;
+      font-size: 3rem;
+  }
+
+  .insight-img{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-template-rows: auto;
+    place-items: center;
+    grid-gap: 10px;
+    padding: 25px;
+    /* margin: 0 auto; */
+  }
+
+  .insight-img img{
+    width: 290px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  img[src="images/edo.svg"]{
+    width: 80%;
+    display: block;
+    margin-left: 22px;
+    max-width: 100%;
+  }

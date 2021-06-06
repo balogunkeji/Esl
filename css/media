@@ -3,15 +3,6 @@
 
   /* .section */
 
-  .sections{
-    margin: 50px 10px;
-  }
-
-  .sections h2,.sections h3,.sections p, .sections span{
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
   .sections-img img[src="images/image4.svg"]{
     margin-left: 0;
   }
@@ -184,62 +175,10 @@
 }
 
 @media screen and (min-width: 993px) and (max-width: 1200px) {
-  .header {
-    padding: 2rem;
-  }
-
-  .header-text {
-    padding: 50px 70px 10px 70px;
-    display: grid;
-    grid-template-columns: 1.5fr 2fr;
-  }
-
-  .header-text-1 h1 {
-    font-size: 48px;
-    line-height: 1;
-    padding-top: 60px;
-  }
-
-  .header-text-1 {
-    padding-left: 70px;
-  }
-
-  .header-text-1 p {
-    font-size: 16px;
-    padding: 20px 0;
-  }
-
-  .header-text-1 button {
-    padding-bottom: 20px;
-  }
-
-  .header-text-2 {
-    margin-top: -35px;
-    padding-left: 90px;
-    display: block;
-  }
-  .model {
-    width: 360px;
-    margin-top: 50px;
-    margin-left: 20px;
-  }
-  .circle {
-    width: 430px;
-    margin-top: 10px;
-  }
-
+  
   
   .section1 {
     padding: 0 200px;
-  }
-
-  aside h2 {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-  aside h2:after {
-    left: 220px;
-    top: 55px;
   }
 
   .sections, .asidess{
@@ -333,22 +272,8 @@
   .section1 {
     padding: 0 300px 100px 300px;
   }
-
-  aside h2 {
-    padding-left: 200px;
-  }
-  aside h2:after {
-    left: 315px;
-    top: 54px;
-  }
-  .sections,.asidess{
-    margin: 55px 300px 60px 300px;
-  }
   
-  .sections h2,.sections h3,.sections p, .sections span{
-    padding-left: 80px;
-    padding-right: 80px;
-  } 
+  
 
   .sections h2{
     font-size: 4rem;
