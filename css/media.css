@@ -409,6 +409,7 @@
 
   .header-text-2 {
     display: block;
+    margin-right: 20px;
   }
 
   .header-text-1{
@@ -433,7 +434,7 @@
     margin-left: 15px;
   }
   .circle {
-    width: 605px;
+    width: 610px;
     margin-top: -20px;
   }
 
