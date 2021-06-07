@@ -1,5 +1,38 @@
 @media screen and (min-width: 50px) and (max-width: 480px) {
 
+  .mobile {
+    display: block;
+  }
+  ul {
+    position: absolute;
+    display: none;
+    left: -600px;
+    right: 0;
+    top: -1%;
+    overflow: hidden;
+    animation: 0.5s slide forwards;
+  }
+
+  nav .ul li, nav .ul a {
+    padding: 25px;
+    color: white;
+  }
+  nav {
+    justify-content: space-between;
+  }
+  li ion-icon,
+  a {
+    color: white;
+  }
+
+  @keyframes slide {
+    100% {
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      width: 50%;
+      /* min-height: 0; */
+    }
+  }
       .about-header h1{
         font-size: 3rem;
         padding: 2rem 2rem 8rem 2rem;
