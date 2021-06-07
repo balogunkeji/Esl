@@ -129,7 +129,7 @@ nav {
   bottom: 0;
   position: absolute;
   left: 0;
-  right: 0;
+  /* right: 0; */
   width: 100%;
   object-fit: cover;
 }
