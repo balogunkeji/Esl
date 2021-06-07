@@ -21,7 +21,6 @@ html,
 body {
   font-size: 10px;
   font-family: var(--body-font);
-  color: var(--font-color);
   overflow-x: hidden;
 }
 
@@ -42,7 +41,20 @@ body {
   width: 100%;
   min-height: 100%;
   position: relative;
+  color: white;
 }
+
+.about-header::after{
+  content: url('/images/mask.svg');
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  max-width: 110%;
+  object-fit: contain;
+}
+
+
 .container{
     background-color: var(--body-color);
 }
@@ -63,14 +75,10 @@ h6 {
   font-style: normal;
   font-weight: bold;
 }
-
 p,
-input,
-figcaption,
-a,
-li {
+input {
   font-family: var(--body-font);
-  color: white;
+  color: black;
   font-weight: 400;
   font-size: 1.4rem;
 }
@@ -104,6 +112,7 @@ nav {
   font-size: 50px;
   position: relative;
   display: none;
+  color: white;
 }
 
   ul a, ul li {
@@ -112,10 +121,13 @@ nav {
   list-style-type: none;
   align-items: center;
   margin: 0 5.5px;
+  color: white;
+  font-size: 14px;
 }
 
  ul li ion-icon {
   font-size: 2rem;
+  color: white;
 }
 
   ul {
@@ -125,6 +137,39 @@ nav {
   align-items: center;
   flex-wrap: wrap;
   overflow-x: hidden;
+}
+
+.about-header h1{
+  font-size: 6rem;
+  font-family: 'Mulish';
+  padding: 2rem 10rem 8rem 10rem;
+  color: white;
+}
+
+.text-1{
+  text-align: center;
+}
+
+.text1 h2, .text2 h3{
+  font-size: 3rem;
+}
+
+.text1,.text2{
+  padding: 40px 0;
+}
+
+.text-2{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+  place-items: center;
+}
+
+.aside-about{
+  padding-bottom: 50px;
+}
+
+.about-section{
+  margin-top: 6rem;
 }
 
 footer {
@@ -154,15 +199,6 @@ footer {
     border: none;
     color: grey;
   }
-
-  .insight-section{
-      display: grid;
-      grid-template-columns: auto;
-      grid-template-rows: auto;
-      place-content: center;
-     
-  }
-  
   .footer-5 button {
     border-radius: 0;
     position: absolute;
@@ -205,7 +241,14 @@ footer {
   }
 
   .card{
-    padding: 2px 15px 15px 2px;
+    padding: 2px 1px 15px 2px;
+  }
+
+  .card-section{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-columns: auto;
+    place-items: center;
   }
   
   .edo img{
@@ -219,13 +262,30 @@ footer {
   
   
   .text{
-    width: 70%;
+    width: 100%;
     display: block;
     padding: 0 50px 0 10px;
   }
 
+  aside h2 {
+    font-size: 3rem;
+    padding: 3rem;
+    position: relative;
+  }
+  
+  aside h2::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 2px;
+    left: 210px;
+    top: 50px;
+    background-color: black;
+  }
+
   .text1{
-    padding: 0 10px 0 50px;
+    text-align: justify;
+    padding-left: 40px;
   }
   .text h4 {
     font-size: 20px;
@@ -239,30 +299,89 @@ footer {
     font-size: 13px;
   }
   
-  
-  .text span {
-    display: block;
-    padding-bottom: 5px;
-    font-size: 13px;
-    color: black;
-  }
-  
-  
-  @media only screen and (max-width: 680px) {
+  @media only screen and (max-width: 700px) {
     .cards{
       display: block;
       width: 300px;
-      height: 690px;
+      height: fit-content;
       padding: 0 15px 0 15px;
     }
   
     .card{
-      height: 650px;
-      padding-top: 1px;
-      padding-bottom: 20px;
+      padding: 2px 1px 5px 2px;
     }
   
     .text{
-      width: fit-content;
+      width: 100%;
     }
+
+    .text{
+      width: 100%;
+      display: block;
+      padding: 0 10px 0 10px;
+    }
+  }
+
+  .asides {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    max-width: 100%;
+    height: 100px;
+    align-items: center;
+    border-radius: 40px;
+    margin: 20px 0;
+    border: 2px solid #515151;
+    padding: 2px 18px 2px 2px;
+  }
+
+  .aside-about{
+    padding-bottom: 50px;
+  }
+
+  .num-text p{
+    padding: 10px 40px 10px 0px;
+    display: block;
+  }
+  .num{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    max-width :100px;
+    max-height: 100px;
+    text-align: center;
+    font-size: 4rem;
+    margin: 20px;
+    padding: 10px ;
+    color: #ffffff;
+  }
+
+  .asidess{
+    display: grid;
+    grid-auto-columns: auto;
+    place-items: center;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .asides{
+      display: block;
+      width: 300px;
+      max-width: 100%;
+    height: fit-content;
+    padding: 10px 12px;
+    margin: 20px auto;
+    }
+
+    .num-text{
+      padding-top: 20px;
+    }
+  
+    .num{
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  
+  .text-1 h2, .text-2 h3{
+    font-size: 4rem 4rem;
   }
