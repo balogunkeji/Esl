@@ -499,7 +499,8 @@
     margin-left: 15px;
   }
   .circle {
-    width: 610px;
+    width: 650px;
+    object-fit: cover;
     margin-top: -20px;
   }
 
@@ -523,7 +524,10 @@
 
   .section-container1 {
     padding: 0 120px;
-   
+  }
+
+  .section-container1 h2{
+    padding-left: 70px;
   }
 
   .header-form {
@@ -540,11 +544,11 @@
     width: 80%;
   }
 
-  aside .h2 h2 {
-    padding-left: 200px;
+   aside h2 {
+    padding-left: 190px;
   }
-  aside .h2 h2:after {
-    left: 315px;
+ aside h2:after {
+    left: 300px;
     top: 54px;
   }
   .insight-section{
