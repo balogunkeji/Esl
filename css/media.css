@@ -540,10 +540,10 @@
     width: 80%;
   }
 
-  aside h2 {
+  aside .h2 h2 {
     padding-left: 200px;
   }
-  aside h2:after {
+  aside .h2 h2:after {
     left: 315px;
     top: 54px;
   }
