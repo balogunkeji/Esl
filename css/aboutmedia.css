@@ -1,8 +1,22 @@
 @media screen and (min-width: 50px) and (max-width: 480px) {
+
+      .about-header h1{
+        font-size: 3rem;
+        padding: 2rem 2rem 8rem 2rem;
+        color: white;
+      }
+
+      .footer-5{
+        padding-left: 15px;
+      }
+      .footer-5 input {
+        width: 50%;
+      }
     
-  .text-1{
-    padding-top: 2rem;
-  }
+      .footer-5 button {
+        display: block;
+        margin-top: 10px;
+      }
 
   .about-section{
     padding: 1rem;
@@ -11,52 +25,26 @@
 
   .text-1 h2, .text-2 h3{
     font-size: 2rem;
-    padding: 20px 0;
+    padding: 20px 3px;
   }
 
-  .mobile {
-    display: block;
-  }
-  ul {
-    position: absolute;
-    display: none;
-    left: -600px;
-    right: 0;
-    top: -1%;
-    overflow: hidden;
-    animation: 0.5s slide forwards;
+  .sections1{
+      padding-bottom: 4rem;
   }
 
-  nav .ul li, nav .ul a {
-    padding: 25px;
-    color: white;
-  }
-  nav {
-    justify-content: space-between;
-  }
-  li ion-icon,
-  a {
-    color: white;
-  }
-
-  @keyframes slide {
-    100% {
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.4);
-      width: 50%;
-      /* min-height: 0; */
-    }
-  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 600px) {
     
+    .about-header h1{
+        font-size: 3rem;
+        padding: 2rem 4rem 8rem 4rem;
+        color: white;
+      }
     .text-1{
         padding-top: 2rem;
       }
-    
-    
-    
+
       .text-1 h2, .text-2 h3{
         font-size: 2.5rem;
         padding: 20px 0;
@@ -162,7 +150,7 @@
         padding-left: 300px;
       }
      aside h2:after {
-        left: 300px;
-        top: 54px;
+        left: 480px;
+        top: 50px;
       }
 }
