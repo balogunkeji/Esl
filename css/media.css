@@ -11,7 +11,7 @@
     display: none;
     left: -600px;
     right: 0;
-    top: -1%;
+    top: 0;
     overflow: hidden;
     animation: 0.5s slide forwards;
   }
@@ -31,7 +31,7 @@
   @keyframes slide {
     100% {
       left: 0;
-      background-color: rgba(0, 0, 0, 0.4);
+      background-color: rgba(0, 0, 0, 0.8);
       width: 50%;
       /* min-height: 0; */
     }
@@ -52,6 +52,13 @@
     display: none;
   }
 
+  p{
+    font-size: 1.2rem;
+  }
+
+  h1,h2,h3,h4{
+    font-size: 2rem;
+  }
   .section-container1 {
     margin: 1rem auto;
   }
@@ -62,6 +69,7 @@
 
   figure {
     width: 250px;
+    margin-left: 0;
   }
 
   figure h4 {
@@ -71,6 +79,17 @@
   figcaption {
     padding: 0 5px 20px 10px;
     font-size: 12px;
+  }
+
+  .cards{
+    max-width: 100%;
+    margin-left: 0;
+    height: 570px;
+  }
+
+  .text{
+    width: 100%;
+    padding: 0 5px;
   }
 
   /* contact */
@@ -103,6 +122,10 @@
   .footer-5 button {
     display: block;
     margin-top: 10px;
+  }
+
+  footer li{
+    font-size: 1rem;
   }
 
   .insight-section{

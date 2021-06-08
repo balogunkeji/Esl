@@ -178,8 +178,8 @@ aside h2::after {
 
 .section {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
+  grid-gap: 30px;
   grid-template-rows: auto;
   place-items: center;
 }
@@ -203,7 +203,8 @@ figure img {
 figure {
   background-color: white;
   width: 290px;
-  max-height: 100%;
+  height: 410px;
+  min-height: 100%;
   border-radius: 20px;
   box-shadow: 0px 14px 54px rgba(0, 0, 0, 0.02);
 
@@ -224,8 +225,8 @@ figcaption {
   grid-template-columns: auto;
   grid-template-rows: auto;
   place-items: center;
-  grid-gap: 10px;
-  margin-bottom: 50px;
+  grid-gap: 30px;
+  margin: 20px 0 100px 0;
 }
 
 .cards {
@@ -235,18 +236,21 @@ figcaption {
   background-color: white;
   width: 700px;
   height: 300px;
-  margin: 20px 0;
+  min-height: 100%;
+  margin: 10px 0;
   border-radius: 20px;
-  padding: 15px 0 15px 15px;
+  padding: 10px;
 }
 
 .edo img{
   object-fit: cover;
-  width: 415px;
-  height: 355px;
+  width: 300px;
+  height: 320px;
+  min-height: 100%;
+  overflow: hidden;
   display: block;
-  margin: 15px auto auto auto;
-   border-radius: 50px;
+  padding: 50px 50px auto 10px;
+   border-radius: 20px;
 }
 .card{
   height: 280px;

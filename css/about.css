@@ -131,7 +131,7 @@ nav {
   left: 0;
   /* right: 0; */
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 
