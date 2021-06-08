@@ -1,5 +1,5 @@
 @media screen and (min-width: 50px) and (max-width: 480px){
-  .header,.contact-header, .insight-header {
+  .header, .insight-header {
     padding: 1rem;
     height: auto;
   }
@@ -94,13 +94,13 @@
 
   /* contact */
   .header-form {
-    margin: 20px 30px;
+    margin: 20px;
   }
 
   .header-form button {
-    width: 50%;
+    width: 60%;
     display: block;
-    margin: 0 auto;
+    margin: 0;
   }
 
   .header-form input,
@@ -124,8 +124,8 @@
     margin-top: 10px;
   }
 
-  footer li{
-    font-size: 1rem;
+  .footers li{
+    font-size: .9rem;
   }
 
   .insight-section{
@@ -184,7 +184,7 @@
   @keyframes slide {
     100% {
       left: 0;
-      background-color: rgba(0, 0, 0, 0.4);
+      background-color: rgba(0, 0, 0, 0.8);
       width: 50%;
     }
   }
@@ -226,13 +226,13 @@
   }
 
   .header-form {
-    margin: 20px 20px 20px 35px;
+    margin: 20px 20px 20px 0;
   }
 
   .header-form button {
     width: 35%;
     display: block;
-    margin: 0 auto;
+    margin: 0;
   }
 
   .header-form input,
@@ -327,7 +327,7 @@ padding: 2rem 3.5rem;
   .header-form button {
     width: 35%;
     display: block;
-    margin: 0 auto;
+    margin: 0;
   }
 
   .header-form input,
@@ -467,6 +467,13 @@ padding: 2rem 3.5rem;
     padding: 0 100px;
     
   }
+
+  /* footer{
+    height: fit-content;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+  } */
 
   .header-form {
     margin: 80px 200px 80px 220px;
