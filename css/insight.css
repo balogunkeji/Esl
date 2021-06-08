@@ -216,11 +216,12 @@ footer {
     place-items: center;
     grid-gap: 10px;
     padding: 25px;
+    margin-left: 60px;
     /* margin: 0 auto; */
   }
 
   .insight-img img{
-    width: 290px;
+    width: 300px;
     margin: 0 auto;
     display: block;
   }
@@ -229,5 +230,12 @@ footer {
     width: 80%;
     display: block;
     margin-left: 22px;
+    max-width: 100%;
+  }
+
+  img[src="images/image0.svg"]{
+    width: 80%;
+    display: block;
+    margin-left: 0;
     max-width: 100%;
   }
