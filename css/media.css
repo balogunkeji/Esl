@@ -604,8 +604,8 @@ padding: 2rem 3.5rem;
     padding: 4.5rem 4rem 4.5rem 8rem;
   }
   .header-text-1 h1{
-    padding-top: 80px;
-    width: 80%;
+    padding-top: 50px;
+    width: 90%;
   }
 
   .header-text p{
@@ -617,12 +617,12 @@ padding: 2rem 3.5rem;
     margin-top: 1rem;
   }
   .model {
-    width: 525px;
+    width: 510px;
     margin-top: 23px;
     margin-left: 15px;
   }
   .circle {
-    width: 650px;
+    width: 600px;
     object-fit: cover;
     margin-top: -20px;
   }
@@ -680,6 +680,6 @@ padding: 2rem 3.5rem;
 
   .insight-section h2,.insight-section h3,.insight-section p, .insight-section span{
     padding-left: 60px;
-    padding-right: 250px;
+    padding-right: 200px;
   } 
 }

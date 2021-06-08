@@ -23,6 +23,7 @@ body {
   font-family: var(--body-font);
   color: var(--font-color);
   overflow-x: hidden;
+  line-height: 1.5;
 }
 
 @font-face {
@@ -199,7 +200,7 @@ footer {
   }
   
   .insight-section p{
-    padding-bottom: 30px;
+    padding-bottom: 40px;
     font-size: 16px;
     color: #515151;
   }

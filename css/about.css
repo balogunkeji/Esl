@@ -22,6 +22,7 @@ body {
   font-size: 10px;
   font-family: var(--body-font);
   overflow-x: hidden;
+  line-height: 1.7;
 }
 
 @font-face {
@@ -338,6 +339,7 @@ footer {
   .num-text p{
     padding: 10px 40px 10px 0px;
     display: block;
+    line-height: 1;
   }
   .num{
     border-radius: 50%;
